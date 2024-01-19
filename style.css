@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+:root {
+    /* Theme 1 */
+    /* Background */
+    --clr-very-dark-desaturated-blue-1: hsl(222, 26%, 31%); /* main background */
+    --clr-very-dark-desaturated-blue-2: hsl(223, 31%, 20%); /* toggle background, keypad background */
+    --clr-very-dark-desaturated-blue-3: hsl(224, 36%, 15%); /* screen background */
+
+    --clr-desaturated-blue-1: hsl(225, 21%, 49%); /* key background */
+    --clr-desaturated-blue-2: hsl(224, 28%, 35%); /* key shadow */
+
+    --clr-red: hsl(6, 63%, 50%); /* key background, toggle */
+    --clr-dark-red: hsl(6, 70%, 34%); /* key shadow */
+
+    --clr-light-grayish-orange: hsl(30, 25%, 89%); /* key background */
+    --clr-grayish-orange: hsl(28, 16%, 65%); /* key shadow */
+    
+    /* Text */
+    --clr-very-dark-grayish-blue: hsl(221, 14%, 31%);
+
+    /* Theme 2 */
+    /* Background */
+    --clr-light-gray: hsl(0, 0%, 90%); /* main background */
+    --clr-grayish-red: hsl(0, 5%, 81%); /* toggle background, keypad background */
+    --clr-very-light-gray: hsl(0, 0%, 93%); /* screen background */
+
+    --clr-dark-moderate-cyan: hsl(185, 42%, 37%); /* key background */
+    --clr-very-dark-cyan: hsl(185, 58%, 25%); /* key shadow */
+
+    --clr-orange: hsl(25, 98%, 40%); /* key background, toggle */
+    --clr-dark-orange: hsl(25, 99%, 27%); /* key shadow */
+
+    --clr-light-grayish-yellow: hsl(45, 7%, 89%); /* key background */
+    --clr-dark-grayish-orange: hsl(35, 11%, 61%); /* key shadow */
+
+    /* Text */
+    --clr-very-dark-grayish-yellow: hsl(60, 10%, 19%);
+
+    /* Theme 3 */
+    /* Background */
+    --clr-very-dark-violet-1: hsl(268, 75%, 9%); /* main background */
+    --clr-very-dark-violet-2: hsl(268, 71%, 12%); /* toggle background, keypad background, screen background */
+
+    --clr-dark-violet: hsl(281, 89%, 26%); /* key background */
+    --clr-vivid-magenta: hsl(285, 91%, 52%); /* key shadow */
+    
+    --clr-pure-cyan: hsl(176, 100%, 44%); /* key background, toggle */
+    --clr-soft-cyan: hsl(177, 92%, 70%); /* key shadow */
+
+    --clr-very-dark-violet-3: hsl(268, 47%, 21%); /* key background */
+    --clr-dark-magenta: hsl(290, 70%, 36%); /* key shadow */
+
+    /* Text */
+    --clr-light-yellow: hsl(52, 100%, 62%);
+    --clr-very-dark-blue: hsl(198, 20%, 13%);
+
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --font-family: 'League Spartan', sans-serif;
+    --font-size: 32px;
+}
+
+[data-color-scheme="dark"] {
+    --main-bg-color: var(--clr-very-dark-desaturated-blue-1);
+    --toggle-bg-color: var(--clr-very-dark-desaturated-blue-2);
+    --keypad-bg-color: var(--clr-very-dark-desaturated-blue-2);
+    --screen-bg-color: var(--clr-very-dark-desaturated-blue-3);
+
+    --clear-key-bg-color: var(--clr-desaturated-blue-1);
+    --clear-key-shadow-color: var(--clr-desaturated-blue-2);
+
+    --result-key-bg-color: var(--clr-red);
+    --result-key-shadow-color: var(--clr-dark-red);
+
+    --digit-key-bg-color: var(--clr-light-grayish-orange);
+    --digit-key-shadow-color: var(--clr-grayish-orange);
+
+    --body-color: var(--clr-white);
+    --digit-key-color: var(--clr-very-dark-grayish-blue);
+    --clear-key-color: var(--clr-white);
+    --result-key-color: var(--clr-white);
+}
+
+[data-color-scheme="light"] {
+    --main-bg-color: var(--clr-light-gray);
+    --toggle-bg-color: var(--clr-grayish-red);
+    --keypad-bg-color: var(--clr-grayish-red);
+    --screen-bg-color: var(--clr-very-light-gray);
+
+    --clear-key-bg-color: var(--clr-dark-moderate-cyan);
+    --clear-key-shadow-color: var(--clr-very-dark-cyan);
+
+    --result-key-bg-color: var(--clr-orange);
+    --result-key-shadow-color: var(--clr-dark-orange);
+
+    --digit-key-bg-color: var(--clr-light-grayish-yellow);
+    --digit-key-shadow-color: var(--clr-dark-grayish-orange);
+
+    --body-color: var(--clr-very-dark-grayish-yellow);
+    --digit-key-color: var(--clr-very-dark-grayish-yellow);
+    --clear-key-color: var(--clr-white);
+    --result-key-color: var(--clr-white);
+}
+
+[data-color-scheme="alt"] {
+    --main-bg-color: var(--clr-very-dark-violet-1);
+    --toggle-bg-color: var(--clr-very-dark-violet-2);
+    --keypad-bg-color: var(--clr-very-dark-violet-2);
+    --screen-bg-color: var(--clr-very-dark-violet-2);
+
+    --clear-key-bg-color: var(--clr-dark-violet);
+    --clear-key-shadow-color: var(--clr-vivid-magenta);
+
+    --result-key-bg-color: var(--clr-pure-cyan);
+    --result-key-shadow-color: var(--clr-soft-cyan);
+
+    --digit-key-bg-color: var(--clr-very-dark-violet-3);
+    --digit-key-shadow-color: var(--clr-dark-magenta);
+
+    --body-color: var(--clr-light-yellow);
+    --digit-key-color: var(--clr-light-yellow);
+    --clear-key-color: var(--clr-white);
+    --result-key-color: var(--clr-very-dark-blue);
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html * {
+    font-family: var(--font-family);
+    color: var(--body-color);
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+    background-color: var(--main-bg-color);
+}
+
+section {
+    width: 540px;
+    margin-inline: 30px;
+}
+
+section > div { border-radius: 10px; }
+
+
+/* calc-container__header */
+.calc-container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.app-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.theme-switch__name {
+    font-size: 0.75rem;
+    letter-spacing: 0.075rem;
+}
+
+.theme-switch__container {
+    width: 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 5px;
+    column-gap: 25px;
+}
+
+.toggle-label__container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-weight: 700;
+} 
+
+.toggle {
+    appearance: none;
+    height: 25px;
+    width: 70px;
+    background-color: var(--toggle-bg-color);
+    border-radius: 25px;
+    padding-inline: 5px;
+    cursor: pointer;
+}
+
+.toggle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.theme-thumb::-webkit-slider-thumb {background-color: var(--result-key-bg-color);}
+
+.theme-thumb::-webkit-slider-thumb:active {filter: brightness(200%);}
+
+
+/* display */
+.display {
+    height: 130px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    background-color: var(--screen-bg-color);
+    
+    overflow: hidden;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+/* pad */
+.pad {
+    height: 480px;
+    padding: 30px;
+    padding-bottom: 35px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 27px;
+    column-gap: 25px;
+
+    background-color: var(--keypad-bg-color);
+}
+
+/* keys */
+.key {
+    padding-top: 5px;
+
+    border: 0;
+    border-radius: 10px;
+    
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.key:active { filter: brightness(125%); }
+
+.digit-key {
+    color: var(--digit-key-color);
+    background-color: var(--digit-key-bg-color);
+    box-shadow: 0px 4px var(--digit-key-shadow-color);
+}
+
+.clear-key,
+.result-key { font-size: 1.75rem; }
+
+.clear-key {
+    color: var(--clear-key-color);
+    background-color: var(--clear-key-bg-color);
+    box-shadow: 0px 4px var(--clear-key-shadow-color);
+}
+
+.result-key {
+    color: var(--result-key-color);
+    background-color: var(--result-key-bg-color);
+    box-shadow: 0px 4px var(--result-key-shadow-color);
+}
+
+.long-key { grid-column: span 2; }
+
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 768px) {
+    section { width: 330px; }
+
+    .display {
+        height: 90px;
+        margin-bottom: 25px;
+        font-size: 3rem;
+    }
+
+    .pad {
+        height: 420px;
+        padding: 25px;
+        padding-bottom: 30px;
+
+        row-gap: 16px;
+        column-gap: 12px;
+    }
+
+    .key {
+        border-radius: 5px;
+        font-size: 2rem;
+    }
+
+    .clear-key,
+    .result-key { font-size: 1.25rem; }
+
+    .long-key { height: 60px; }
+}

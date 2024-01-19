@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body data-color-scheme="dark">
+
+  <section class="calc-container">
+    <div class="calc-container__header">
+      <span class="app-name">calc</span>
+      <div class="theme-switch__container">
+        <div></div>
+        <div class="toggle-label__container">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+        <span class="theme-switch__name">THEME</span>
+        <input class="toggle theme-thumb" type="range" data-theme-toggle name="theme-toggle" onchange="UpdateTheme()" 
+        min="1" step="1" max="3">
+      </div>
+
+    </div>
+
+    <div class="display" id="display">
+      0
+    </div>
+
+    <div class="pad">
+      <button class="key digit-key" name="seven" value="7">7</button>
+      <button class="key digit-key" name="eight" value="8">8</button>
+      <button class="key digit-key" name="nine" value="9">9</button>
+      <button class="key clear-key" name="del" value="del">DEL</button>
+
+      <button class="key digit-key" name="four" value="4">4</button>
+      <button class="key digit-key" name="five" value="5">5</button>
+      <button class="key digit-key" name="six" value="6">6</button>
+      <button class="key digit-key" name="plus" value="+">+</button>
+
+      <button class="key digit-key" name="one" value="1">1</button>
+      <button class="key digit-key" name="two" value="2">2</button>
+      <button class="key digit-key" name="three" value="3">3</button>
+      <button class="key digit-key" name="minus" value="-">-</button>
+
+      <button class="key digit-key" name="point" value=".">.</button>
+      <button class="key digit-key" name="zero" value="0">0</button>
+      <button class="key digit-key" name="divide" value="/">/</button>
+      <button class="key digit-key" name="multiply" value="*">x</button>
+
+      <button class="key clear-key long-key" name="reset" value="reset">RESET</button>
+      <button class="key result-key long-key" name="equal" value="equal">=</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/DragonBoiGelius">Rostyslav Tsarkov</a>.
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="calculator.js"></script>
+    <script src="theme-toggle.js" onload="Main()"></script>
+  </footer>
+
+</body>
+
+</html>
