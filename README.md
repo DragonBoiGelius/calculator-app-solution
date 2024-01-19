@@ -13,8 +13,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/calculator-app-foGolRKwvK)
+- Live Site URL: [Live site URL here](https://calculator-app-solution-eta.vercel.app/)
 
 ### Built with
 
@@ -22,5 +22,4 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - JavaScript and jQuery
